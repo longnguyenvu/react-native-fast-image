@@ -2,7 +2,7 @@ package com.dylanvann.fastimage;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;
-package com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
+import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 
 // We need an AppGlideModule to be present for progress events to work.
 @GlideModule
