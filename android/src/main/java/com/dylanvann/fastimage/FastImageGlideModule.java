@@ -13,10 +13,8 @@ import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 @GlideModule
 public final class FastImageGlideModule extends AppGlideModule {
   @Override
-  public void applyOptions(@NonNull @org.jetbrains.annotations.NotNull Context context, @NonNull @org.jetbrains.annotations.NotNull GlideBuilder builder) {
+  public void applyOptions(@NonNull Context context, @NonNull GlideBuilder builder) {
     int diskCacheSizeBytes = 1024 * 1024 * 100; // 100 MB
     builder.setDiskCache(new InternalCacheDiskCacheFactory(context, diskCacheSizeBytes));
   }
 }
-
-
